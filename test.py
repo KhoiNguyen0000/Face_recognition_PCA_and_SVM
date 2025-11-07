@@ -55,7 +55,7 @@ def pca_svd(Xc, k=None):
     exp_ratio = exp_var / var.sum()
     return comps, Z, exp_var, exp_ratio
 
-K = 100  # số thành phần chính để hiển thị/trích xuất
+K = 3000  # số thành phần chính để hiển thị/trích xuất
 comps0, Z0, var0, ratio0 = pca_svd(Xc_axis0, K)
 comps1, Z1, var1, ratio1 = pca_svd(Xc_axis1, K)
 
